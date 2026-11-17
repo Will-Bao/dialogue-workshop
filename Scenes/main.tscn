@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c6khlofop1a72"]
+
+[ext_resource type="Texture2D" uid="uid://dhtgcxod0d75q" path="res://Art/nakedtrackfortitle.png" id="1_8gbba"]
+[ext_resource type="Script" uid="uid://cnehy4a1iglb1" path="res://Scenes/npc/horse_npc.gd" id="2_jjvhh"]
+[ext_resource type="Texture2D" uid="uid://bcklmr160isvc" path="res://Art/Will-horse.png" id="3_kry3j"]
+
+[node name="Main" type="Node2D" unique_id=2078996978]
+
+[node name="BG" type="Sprite2D" parent="." unique_id=1801079708]
+position = Vector2(570, 335)
+scale = Vector2(0.6398148, 0.6398148)
+texture = ExtResource("1_8gbba")
+
+[node name="WillHorse" type="Sprite2D" parent="." unique_id=1069472147]
+z_index = 1
+position = Vector2(258, 529.00006)
+rotation = -0.17080319
+scale = Vector2(2.967653, 2.967653)
+texture = ExtResource("3_kry3j")
+flip_h = true
+script = ExtResource("2_jjvhh")
