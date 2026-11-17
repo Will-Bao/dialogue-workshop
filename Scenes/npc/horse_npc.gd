@@ -8,6 +8,7 @@ extends Node2D
 ]
 
 @export var dialogue_sfx: Array[AudioStream]
+@export var display_facts = true
 
 const no_audio_line: Array[String] = [
 	"Uh oh...Please assign me a voice SFX in the Inspector!"
@@ -75,5 +76,7 @@ func _animate() -> void:
 	).set_trans(Tween.TRANS_BACK)
 
 func _start_horse_facts():
+	if (!display_facts):
+		return
 	horse_facts.shuffle()
 	DialogueManager.start_dialogue(global_position, horse_facts, dialogue_sfx)
